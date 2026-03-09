@@ -1,35 +1,85 @@
-# Stack Data Structure
+# 📚 Stack Data Structure
 
-## 📌 Introduction
+![DSA](https://img.shields.io/badge/Data%20Structure-Stack-blue)
+![Language](https://img.shields.io/badge/Language-C++-orange)
+![Difficulty](https://img.shields.io/badge/Level-Beginner%20to%20Intermediate-green)
 
-A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle.
-This means the **last element inserted into the stack is the first one to be removed**.
+---
 
-A simple real-world example of a stack is a **stack of plates**, where you can only add or remove plates from the **top**.
+## 📖 Table of Contents
+
+* [Introduction](#-introduction)
+* [Basic Operations](#-basic-operations-on-stack)
+* [Stack Representation](#-stack-representation)
+* [C++ Implementation](#-c-implementation-using-stl)
+* [Time Complexity](#-time-complexity)
+* [Applications of Stack](#-applications-of-stack)
+* [Advantages](#-advantages-of-stack)
+* [Limitations](#-limitations)
+* [Example Problems](#-example-problems-using-stack)
+* [Author](#-author)
+
+---
+
+# 📌 Introduction
+
+A **Stack** is a **linear data structure** that follows the principle of:
+
+## 🔁 LIFO – *Last In, First Out*
+
+This means:
+
+> The **last element inserted** into the stack is the **first one removed**.
+
+### 🍽 Real-World Example
+
+A simple example is a **stack of plates**:
+
+```
+Top
+ ↓
+| Plate 4 |
+| Plate 3 |
+| Plate 2 |
+| Plate 1 |
+```
+
+You can only:
+
+* ➕ **Add plates from the top**
+* ➖ **Remove plates from the top**
 
 ---
 
 # 🧱 Basic Operations on Stack
 
-| Operation  | Description                                 |
-| ---------- | ------------------------------------------- |
-| Push       | Insert an element into the stack            |
-| Pop        | Remove the top element from the stack       |
-| Peek / Top | View the top element without removing it    |
-| isEmpty    | Check if the stack is empty                 |
-| Size       | Returns the number of elements in the stack |
+| Operation      | Description                              |
+| -------------- | ---------------------------------------- |
+| **Push**       | Insert an element into the stack         |
+| **Pop**        | Remove the top element                   |
+| **Peek / Top** | View the top element without removing it |
+| **isEmpty**    | Check whether the stack is empty         |
+| **Size**       | Returns the number of elements           |
 
 ---
 
 # 📊 Stack Representation
 
-A stack can be implemented using:
+Stacks can be implemented using:
 
-1. **Array**
-2. **Linked List**
-3. **STL Stack (C++ Standard Library)**
+### 1️⃣ Array Implementation
 
-Example:
+Uses a fixed-size array.
+
+### 2️⃣ Linked List Implementation
+
+Uses nodes and pointers.
+
+### 3️⃣ STL Stack (C++ Standard Library)
+
+The easiest and most commonly used implementation in C++.
+
+Example visualization:
 
 ```
 Top
@@ -61,7 +111,7 @@ int main() {
 
     cout << "Top element: " << s.top() << endl;
 
-    // Pop element
+    // Remove top element
     s.pop();
 
     cout << "Top after pop: " << s.top() << endl;
@@ -81,96 +131,120 @@ int main() {
 
 # ⚙️ Time Complexity
 
-| Operation | Time Complexity |
-| --------- | --------------- |
-| Push      | O(1)            |
-| Pop       | O(1)            |
-| Peek      | O(1)            |
-| isEmpty   | O(1)            |
+| Operation  | Complexity |
+| ---------- | ---------- |
+| Push       | **O(1)**   |
+| Pop        | **O(1)**   |
+| Peek / Top | **O(1)**   |
+| isEmpty    | **O(1)**   |
+
+Stack operations are **very efficient** because they only access the **top element**.
 
 ---
 
 # 📚 Applications of Stack
 
-Stacks are used in many computer science problems:
+Stacks are widely used in **computer science and software development**.
 
-### 1️⃣ Expression Evaluation
+## 1️⃣ Expression Evaluation
 
-Used for converting and evaluating mathematical expressions.
-
-Example:
+Used to convert expressions:
 
 ```
 Infix → Postfix
 A + B * C
 ```
 
-### 2️⃣ Parenthesis Checking
+---
 
-Used to check balanced parentheses in compilers.
+## 2️⃣ Parenthesis Checking
+
+Used by compilers to check balanced brackets.
 
 Example:
 
 ```
-((a+b) * c)
+((a + b) * c)
 ```
 
-### 3️⃣ Function Calls (Call Stack)
+---
 
-Programming languages use stacks to manage **function calls and recursion**.
+## 3️⃣ Function Calls (Call Stack)
 
-### 4️⃣ Undo / Redo Operations
+Programming languages store **function calls in a stack**.
 
-Used in applications like:
+Example:
 
-* Text editors
-* Image editing software
-* IDEs
+```
+main()
+ └── functionA()
+       └── functionB()
+```
 
-### 5️⃣ Backtracking Algorithms
+---
 
-Examples:
+## 4️⃣ Undo / Redo Operations
+
+Used in applications such as:
+
+* 📝 Text Editors
+* 🎨 Image Editing Software
+* 💻 IDEs (VS Code, IntelliJ)
+
+---
+
+## 5️⃣ Backtracking Algorithms
+
+Examples include:
 
 * Maze solving
 * Depth First Search (DFS)
+* Sudoku solver
 
-### 6️⃣ Stock Span Problem
+---
 
-Finding consecutive days where stock price is less than or equal to the current day.
+## 6️⃣ Stock Span Problem
+
+Used to determine the **number of consecutive days where stock price is lower than the current day**.
 
 ---
 
 # 🚀 Advantages of Stack
 
-* Simple and easy to implement
-* Constant time insertion and deletion
-* Efficient for recursive and backtracking problems
-* Used in memory management
+✔ Simple to implement
+✔ Efficient **O(1)** operations
+✔ Useful in recursion and parsing
+✔ Helps manage program memory (call stack)
 
 ---
 
 # ⚠️ Limitations
 
-* Only the top element can be accessed
-* Fixed-size stacks may cause **overflow**
-* Removing from empty stack causes **underflow**
+❌ Only the **top element** is accessible
+❌ Fixed-size stacks may cause **overflow**
+❌ Removing from an empty stack causes **underflow**
 
 ---
 
 # 📖 Example Problems Using Stack
 
-1. Balanced Parentheses
-2. Next Greater Element
-3. Stock Span Problem
-4. Infix to Postfix Conversion
-5. Largest Rectangle in Histogram
+Some common **DSA problems** solved using stacks:
+
+1️⃣ Balanced Parentheses
+2️⃣ Next Greater Element
+3️⃣ Stock Span Problem
+4️⃣ Infix to Postfix Conversion
+5️⃣ Largest Rectangle in Histogram
 
 ---
 
 # 👨‍💻 Author
 
 **Prepared by:**
-Majid Tamboli
+
+### Majid Tamboli
+
+🔗 GitHub:
 https://github.com/majidtamboli45
 
-As part of **Data Structures and Algorithms (DSA) practice using C++**.
+📘 Created as part of **Data Structures and Algorithms (DSA) practice using C++**.
