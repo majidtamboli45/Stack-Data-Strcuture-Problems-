@@ -173,3 +173,7 @@ The **Stack Data Structure** is an important concept in Data Structures and Algo
 It is widely used in **expression evaluation, recursion, parsing, backtracking, and many optimization problems**.
 
 Understanding stacks helps in solving many **interview and competitive programming problems** efficiently.
+
+
+Author
+Majid Tamboli
