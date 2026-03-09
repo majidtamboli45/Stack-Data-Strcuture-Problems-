@@ -5,7 +5,7 @@
 A **Stack** is a linear data structure that follows the **LIFO (Last In, First Out)** principle.
 This means the **last element inserted into the stack is the first one to be removed**.
 
-It works similarly to a **stack of plates**, where you can only add or remove plates from the **top**.
+A simple real-world example of a stack is a **stack of plates**, where you can only add or remove plates from the **top**.
 
 ---
 
@@ -29,7 +29,7 @@ A stack can be implemented using:
 2. **Linked List**
 3. **STL Stack (C++ Standard Library)**
 
-Example representation:
+Example:
 
 ```
 Top
@@ -92,22 +92,22 @@ int main() {
 
 # 📚 Applications of Stack
 
-Stacks are widely used in many computer science problems:
+Stacks are used in many computer science problems:
 
 ### 1️⃣ Expression Evaluation
 
-* Infix → Postfix conversion
-* Postfix evaluation
+Used for converting and evaluating mathematical expressions.
 
 Example:
 
 ```
+Infix → Postfix
 A + B * C
 ```
 
 ### 2️⃣ Parenthesis Checking
 
-Used in compilers to check balanced parentheses.
+Used to check balanced parentheses in compilers.
 
 Example:
 
@@ -119,12 +119,12 @@ Example:
 
 Programming languages use stacks to manage **function calls and recursion**.
 
-### 4️⃣ Undo/Redo Operations
+### 4️⃣ Undo / Redo Operations
 
 Used in applications like:
 
 * Text editors
-* Photoshop
+* Image editing software
 * IDEs
 
 ### 5️⃣ Backtracking Algorithms
@@ -136,28 +136,28 @@ Examples:
 
 ### 6️⃣ Stock Span Problem
 
-Finding the number of consecutive days where stock prices are less than or equal to the current price.
+Finding consecutive days where stock price is less than or equal to the current day.
 
 ---
 
 # 🚀 Advantages of Stack
 
-* Simple and efficient data structure
+* Simple and easy to implement
 * Constant time insertion and deletion
-* Useful in many algorithmic problems
-* Helps in memory management (call stack)
+* Efficient for recursive and backtracking problems
+* Used in memory management
 
 ---
 
 # ⚠️ Limitations
 
-* Limited access (only top element accessible)
-* Possible **overflow** if stack size is fixed
-* Possible **underflow** when popping from empty stack
+* Only the top element can be accessed
+* Fixed-size stacks may cause **overflow**
+* Removing from empty stack causes **underflow**
 
 ---
 
-# 📖 Example Problems using Stack
+# 📖 Example Problems Using Stack
 
 1. Balanced Parentheses
 2. Next Greater Element
@@ -167,13 +167,10 @@ Finding the number of consecutive days where stock prices are less than or equal
 
 ---
 
-# 👨‍💻 Conclusion
+# 👨‍💻 Author
 
-The **Stack Data Structure** is an important concept in Data Structures and Algorithms.
-It is widely used in **expression evaluation, recursion, parsing, backtracking, and many optimization problems**.
-
-Understanding stacks helps in solving many **interview and competitive programming problems** efficiently.
-
-
-Author
+**Prepared by:**
 Majid Tamboli
+https://github.com/majidtamboli45
+
+As part of **Data Structures and Algorithms (DSA) practice using C++**.
